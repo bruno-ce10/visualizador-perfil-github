@@ -30,3 +30,10 @@ btnSearch.addEventListener('click', async () => {
     }
 });
 
+// permitir pesquisar pressionando Enter dentro do input
+inputSearch.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+        btnSearch.click();
+    }
+});
+
