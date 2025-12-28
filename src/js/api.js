@@ -11,3 +11,11 @@ export async function fetchUser(userName) {
 }
 
 export { BASE_URL };
+
+export async function fetchUserRepos(userName) {
+  const response = await fetch(`${BASE_URL}/users/${userName}/repos?per_page=10`);
+  if (!response.ok) {
+    throw new Error ('Repositórios não encontrados')  
+  }
+  return await response.json();
+}

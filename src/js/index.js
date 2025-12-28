@@ -1,6 +1,7 @@
 import { inputSearch, btnSearch, profileResults } from './dom.js';
-import { fetchUser } from './api.js';
+import { fetchUser, fetchUserRepos } from './api.js';
 import { renderLoading, clear, renderProfile } from './render.js';
+
 
 btnSearch.addEventListener('click', async () => {
     const userName = inputSearch.value.trim();
@@ -13,7 +14,11 @@ btnSearch.addEventListener('click', async () => {
 
     try {
         const userData = await fetchUser(userName);
-        renderProfile(profileResults, userData);
+        const userRepos = await fetchUserRepos(userName);
+        console.log(userRepos);
+
+
+        renderProfile(profileResults, userData, userRepos);
     } catch (error) {
         if (error.status === 404) {
             alert('Usuário não encontrado. Por favor, verifique o nome de usuário e tente novamente.');
