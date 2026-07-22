@@ -1,42 +1,51 @@
-# Visualizador de Perfil GitHub
+# 👤 Visualizador de Perfil GitHub
 
-Aplicação web simples para buscar perfis e repositórios do GitHub.
+Projeto desenvolvido durante meus estudos de Front-End com o objetivo de praticar o consumo da API pública do GitHub utilizando JavaScript.
 
-Funcionalidades
-- Buscar usuário pelo nome de usuário do GitHub.
-- Exibir informações do perfil (avatar, nome, bio, seguidores, seguindo).
-- Mostrar até 10 repositórios do usuário com stars, forks, watchers e linguagem.
+## 🚀 Demonstração
 
-Endpoints utilizados
-- Perfil: `GET https://api.github.com/users/:username`
-- Repositórios: `GET https://api.github.com/users/:username/repos?per_page=10`
+🔗 **Acesse o projeto:**  
+https://bruno-ce10.github.io/visualizador-perfil-github/
 
-Como usar (desenvolvimento)
-1. Abra o arquivo `index.html` no navegador ou sirva o projeto com um servidor estático.
+## 🛠️ Tecnologias utilizadas
 
-Exemplos rápidos para servir localmente:
+- HTML5
+- CSS3
+- JavaScript
+- GitHub REST API
 
-Python 3:
+## ✨ Funcionalidades
+
+- Buscar usuários pelo nome
+- Exibir avatar, nome e biografia
+- Mostrar seguidores e seguindo
+- Listar até 10 repositórios
+- Exibir estrelas, forks e linguagem dos repositórios
+
+## 📷 Preview
+
+> *(Adicionar uma captura de tela do projeto.)*
+
+## 📚 O que aprendi
+
+Durante este projeto pratiquei:
+
+- Consumo de APIs com JavaScript
+- Manipulação do DOM
+- Requisições assíncronas
+- Organização do código
+- Tratamento de respostas da API
+
+## ▶️ Como executar
+
+Clone o repositório:
+
 ```bash
-python -m http.server 8000
+git clone https://github.com/bruno-ce10/visualizador-perfil-github.git
 ```
 
-Node (serve):
-```bash
-npx serve .
-```
+Depois abra o arquivo `index.html`.
 
-Estrutura do projeto
-- `index.html` — página principal
-- `src/js/` — scripts JavaScript (`api.js`, `dom.js`, `index.js`, `render.js`)
-- `src/css/` — estilos
+## 👨‍💻 Autor
 
-Notas de desenvolvimento
-- Ao digitar um nome de usuário e clicar em pesquisar (ou pressionar Enter) o app busca os dados na API do GitHub.
-- Caso o usuário não exista, é exibido um alerta.
-
-Contribuições
-- Sugestões e PRs são bem-vindos.
-
-Licença
-- Projeto sem licença explícita.
+Bruno Cé
