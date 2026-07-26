@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   <!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visualizador de perfil no GitHub</title>
-    <link rel="stylesheet" href="/src/css/animations.css">
-    <link rel="stylesheet" href="/src/css/reset.css">
-    <link rel="stylesheet" href="/src/css/responsive.css">
-    <link rel="stylesheet" href="/src/css/styles.css">
+
+    <link rel="stylesheet" href="./src/css/animations.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+    <link rel="stylesheet" href="./src/css/styles.css">
 </head>
 <body>
     <main>
@@ -16,17 +20,24 @@
         <section class="container">
             <header>
                 <h2>Buscar Usuário</h2>
-                <p class="search-hint">Digite o nome de usuário do GitHub e tenha acesso aos dados do perfil</p>
-                <input type="text" id="input-search" placeholder="Digite o nome de usuário no GitHub">
+                <p class="search-hint">
+                    Digite o nome de usuário do GitHub e tenha acesso aos dados do perfil
+                </p>
+
+                <input
+                    type="text"
+                    id="input-search"
+                    placeholder="Digite o nome de usuário no GitHub">
 
                 <input type="button" value="Buscar" id="btn-search">
-
             </header>
 
             <div class="profile-results"></div>
         </section>
     </main>
-    
-    <script type="module" src="/src/js/index.js"></script>
+
+    <script type="module" src="./src/js/index.js"></script>
+</body>
+</html>
 </body> 
 </html>
